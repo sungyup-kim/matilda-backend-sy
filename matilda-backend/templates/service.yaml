@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: matilda-backend
+  namespace: mlops-dev
+spec:
+  selector:
+    app: matilda-backend
+  type: NodePort
+  ports:
+    - port: 9000
+      targetPort: 8000
+      nodePort: 32125
