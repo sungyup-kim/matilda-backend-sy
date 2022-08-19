@@ -17,6 +17,9 @@ spec:
       - name: matilda-backend
         #image: 3.37.191.158:30002/docker-local/matilda-backend:{{.Values.imagetag}}
         image: 15.164.12.54:5000/docker-local/matilda-backend:{{.Values.imagetag}}
+        env:
+        - name: KUBECONFIG
+          value: "/kube/kube-config"
         ports: []
         resources:
           limits: {}
