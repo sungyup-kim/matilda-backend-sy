@@ -15,12 +15,12 @@ spec:
       hostNetwork: false
       containers:
       - name: matilda-backend
-        image: 3.37.191.158:30002/docker-local/matilda-backend:{{.Values.imagetag}}
-        #image: 15.164.12.54:5000/docker-local/matilda-backend
+        #image: 3.37.191.158:30002/docker-local/matilda-backend:{{.Values.imagetag}}
+        image: 15.164.12.54:5000/docker-local/matilda-backend:{{.Values.imagetag}}
         ports: []
         resources:
           limits: {}
         ports:
         - containerPort: 8000
       imagePullSecrets:
-      - name: harborcred
+      - name: regcred
