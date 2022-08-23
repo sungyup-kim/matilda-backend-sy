@@ -13,6 +13,6 @@ RUN npm install \
     vuex \
     vuex-persistedstate
 RUN mkdir -p /frontend/node_modules/.cache && chmod -R 777 /frontend/node_modules/.cache
-
+RUN chown -R node:node /frontend/node_modules
 EXPOSE 8080
 CMD ["npm", "run", "serve"]
