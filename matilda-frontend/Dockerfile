@@ -12,7 +12,7 @@ RUN npm install \
     axios \
     vuex \
     vuex-persistedstate
-RUN mkdir -p node_modules/.cache && chmod -R 777 node_modules/.cache
+RUN mkdir -p /frontend/node_modules/.cache && chmod -R 777 /frontend/node_modules/.cache
 
 EXPOSE 8080
 CMD ["npm", "run", "serve"]
