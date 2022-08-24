@@ -2,4 +2,4 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 replicaCount: 2
-imagetag: "97c84c6"
+imagetag: "509f1b2"
